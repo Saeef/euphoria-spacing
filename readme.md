@@ -115,6 +115,7 @@ Calling `spacing` without arguments will get you the default spacing mapping, wh
 
 ```js
 {
+  none: 0,
   xxs: '0.25rem',
   xs: '0.5rem',
   sm: '0.75rem',

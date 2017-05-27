@@ -1,0 +1,12 @@
+{
+  "name": "y",
+  "version": "0.1.0",
+  "description": "CSS-in-JS utils for margins and padding.",
+  "main": "index.js",
+  "repository": "github.com/danawoodman/euphoria-spacing",
+  "author": "Dana Woodman <dana@danawoodman.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ramda": "0.23.0"
+  }
+}

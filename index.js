@@ -1,5 +1,3 @@
-// @flow
-
 const R = require('ramda')
 
 function makeSpacingClass(type, direction, sizeName, size) {

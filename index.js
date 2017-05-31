@@ -35,7 +35,6 @@ function makeSpacingClass(type, direction, sizeName, size) {
 const types = ['padding', 'margin']
 const directions = ['', 'bottom', 'left', 'right', 'top', 'x', 'y']
 const defaultSpacing = {
-  none: 0,
   xxs: '0.25rem',
   xs: '0.5rem',
   sm: '0.75rem',
@@ -56,7 +55,7 @@ module.exports = (spacing = defaultSpacing) =>
               d =>
                 R.map(
                   s => makeSpacingClass(t, d, s[0], s[1]),
-                  R.toPairs(spacing)
+                  R.toPairs(R.merge(spacing, { none: 0 }))
                 ),
               directions
             ),

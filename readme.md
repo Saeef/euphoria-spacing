@@ -4,6 +4,8 @@ A Euphoria.css utility library to create margin and padding classes in your CSS-
 
 This module returns a string of class names you can then inject into a page, using something like [glamor][glamor].
 
+We automatically inject `none` classes for padding and spacing (eg `.p-none { padding: 0; }`) and `auto` classes for margins (eg `.m-auto { margin: auto; }`).
+
 NOTE: Currently this only works with ES6 support using Babel or Node 7.x+.
 
 
@@ -27,7 +29,6 @@ import spacing from 'euphoria-spacing'
 
 css.insert(
   spacing({
-    none: 0,
     sm: '0.5rem',
     md: '1rem',
     lg: '2rem',
@@ -122,7 +123,6 @@ Calling `spacing` without arguments will get you the default spacing mapping, wh
 
 ```js
 {
-  none: 0,
   xxs: '0.25rem',
   xs: '0.5rem',
   sm: '0.75rem',
@@ -134,6 +134,9 @@ Calling `spacing` without arguments will get you the default spacing mapping, wh
 ```
 
 ## Changelog
+
+### v0.3.0
+- Automatically insert `none` classes since they're expected as defaults.
 
 ### v0.2.0
 - Add margin auto helpers: `.m-auto`, `.ml-auto`, `.mr-auto`, `.mb-auto`, `.mt-auto`, `.mx-auto`, `.my-auto`

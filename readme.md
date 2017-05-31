@@ -135,6 +135,9 @@ Calling `spacing` without arguments will get you the default spacing mapping, wh
 
 ## Changelog
 
+### v0.4.0
+- Make all styles add `!important` suffix.
+
 ### v0.3.0
 - Automatically insert `none` classes since they're expected as defaults.
 

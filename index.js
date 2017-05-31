@@ -9,25 +9,25 @@ function makeSpacingClass(type, direction, sizeName, size) {
   let space
   switch (d) {
     case 'x':
-      space = `${t}-left: ${s}; ${t}-right: ${s};`
+      space = `${t}-left: ${s} !important; ${t}-right: ${s} !important;`
       break
     case 'y':
-      space = `${t}-bottom: ${s}; ${t}-top: ${s};`
+      space = `${t}-bottom: ${s}!important; ${t}-top: ${s} !important;`
       break
     case 'bottom':
-      space = `${t}-${d}: ${s};`
+      space = `${t}-${d}: ${s} !important;`
       break
     case 'left':
-      space = `${t}-${d}: ${s};`
+      space = `${t}-${d}: ${s} !important;`
       break
     case 'right':
-      space = `${t}-${d}: ${s};`
+      space = `${t}-${d}: ${s} !important;`
       break
     case 'top':
-      space = `${t}-${d}: ${s};`
+      space = `${t}-${d}: ${s} !important;`
       break
     default:
-      space = `${t}: ${s};`
+      space = `${t}: ${s} !important;`
   }
   return `${classname} { ${space} }`
 }
@@ -62,13 +62,13 @@ module.exports = (spacing = defaultSpacing) =>
           types
         ),
         [
-          '.m-auto { margin: auto; }',
-          '.ml-auto { margin-left: auto; }',
-          '.mr-auto { margin-right: auto; }',
-          '.mb-auto { margin-bottom: auto; }',
-          '.mt-auto { margin-top: auto; }',
-          '.mx-auto { margin-left: auto; margin-right: auto; }',
-          '.my-auto { margin-top: auto; margin-bottom: auto; }',
+          '.m-auto { margin: auto !important; }',
+          '.ml-auto { margin-left: auto !important; }',
+          '.mr-auto { margin-right: auto !important; }',
+          '.mb-auto { margin-bottom: auto !important; }',
+          '.mt-auto { margin-top: auto !important; }',
+          '.mx-auto { margin-left: auto !important; margin-right: auto !important; }',
+          '.my-auto { margin-top: auto !important; margin-bottom: auto !important; }',
         ]
       )
     )

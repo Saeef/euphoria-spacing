@@ -49,17 +49,28 @@ module.exports = (spacing = defaultSpacing) =>
   R.join(
     '\n',
     R.flatten(
-      R.map(
-        t =>
-          R.map(
-            d =>
-              R.map(
-                s => makeSpacingClass(t, d, s[0], s[1]),
-                R.toPairs(spacing)
-              ),
-            directions
-          ),
-        types
+      R.concat(
+        R.map(
+          t =>
+            R.map(
+              d =>
+                R.map(
+                  s => makeSpacingClass(t, d, s[0], s[1]),
+                  R.toPairs(spacing)
+                ),
+              directions
+            ),
+          types
+        ),
+        [
+          '.m-auto { margin: auto; }',
+          '.ml-auto { margin-left: auto; }',
+          '.mr-auto { margin-right: auto; }',
+          '.mb-auto { margin-bottom: auto; }',
+          '.mt-auto { margin-top: auto; }',
+          '.mx-auto { margin-left: auto; margin-right: auto; }',
+          '.my-auto { margin-top: auto; margin-bottom: auto; }',
+        ]
       )
     )
   )

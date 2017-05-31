@@ -79,36 +79,43 @@ Now you will have the following classes available to you:
 .m-sm { margin: 0.5rem; }
 .m-md { margin: 1rem; }
 .m-lg { margin: 2rem; }
+.m-auto { margin: auto; }
 
 .mb-none { margin-bottom: 0; }
 .mb-sm { margin-bottom: 0.5rem; }
 .mb-md { margin-bottom: 1rem; }
 .mb-lg { margin-bottom: 2rem; }
+.mb-auto { margin-bottom: auto; }
 
 .ml-none { margin-left: 0; }
 .ml-sm { margin-left: 0.5rem; }
 .ml-md { margin-left: 1rem; }
 .ml-lg { margin-left: 2rem; }
+.ml-auto { margin-left: auto; }
 
 .mr-none { margin-right: 0; }
 .mr-sm { margin-right: 0.5rem; }
 .mr-md { margin-right: 1rem; }
 .mr-lg { margin-right: 2rem; }
+.mr-auto { margin-right: auto; }
 
 .mt-none { margin-top: 0; }
 .mt-sm { margin-top: 0.5rem; }
 .mt-md { margin-top: 1rem; }
 .mt-lg { margin-top: 2rem; }
+.mt-auto { margin-top: auto; }
 
 .mx-none { margin-left: 0; margin-right: 0; }
 .mx-sm { margin-left: 0.5rem; margin-right: 0.5rem; }
 .mx-md { margin-left: 1rem; margin-right: 1rem; }
 .mx-lg { margin-left: 2rem; margin-right: 2rem; }
+.mx-auto { margin-left: auto; margin-right: auto; }
 
 .my-none { margin-top: 0; margin-bottom: 0; }
 .my-sm { margin-top: 0.5rem; margin-bottom: 0.5rem; }
 .my-md { margin-top: 1rem; margin-bottom: 1rem; }
 .my-lg { margin-top: 2rem; margin-bottom: 2rem; }
+.my-auto { margin-top: auto; margin-bottom: auto; }
 ```
 
 Calling `spacing` without arguments will get you the default spacing mapping, which is:
@@ -127,6 +134,12 @@ Calling `spacing` without arguments will get you the default spacing mapping, wh
 ```
 
 ## Changelog
+
+### v0.2.0
+- Add margin auto helpers: `.m-auto`, `.ml-auto`, `.mr-auto`, `.mb-auto`, `.mt-auto`, `.mx-auto`, `.my-auto`
+
+### v0.1.1
+- Remove flow cruft
 
 ### v0.1.0
 - Initial release!

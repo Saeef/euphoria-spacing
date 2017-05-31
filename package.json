@@ -1,6 +1,6 @@
 {
   "name": "euphoria-spacing",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "CSS-in-JS utils for margins and padding.",
   "main": "index.js",
   "repository": "github.com/danawoodman/euphoria-spacing",

@@ -22,7 +22,7 @@ npm i -S euphoria-spacing
 This module can be used in many ways. For example, using [glamor][glamor], you would do the following:
 
 ```js
-import { css } from glamor
+import { css } from 'glamor'
 import spacing from 'euphoria-spacing'
 
 glamor.css.insert(

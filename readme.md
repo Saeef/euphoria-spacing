@@ -25,7 +25,7 @@ This module can be used in many ways. For example, using [glamor][glamor], you w
 import { css } from 'glamor'
 import spacing from 'euphoria-spacing'
 
-glamor.css.insert(
+css.insert(
   spacing({
     none: 0,
     sm: '0.5rem',

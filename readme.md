@@ -1,5 +1,7 @@
 # euphoria-spacing
 
+## !!!!!!!!!!!!!!!!!!!!!!! MOVED TO [Euphoria](https://github.com/danawoodman/euphoria)!!!!!!!!!!!!!!!!!
+
 A Euphoria.css utility library to create margin and padding classes in your CSS-to-JS projects.
 
 This module returns a string of class names you can then inject into a page, using something like [glamor][glamor].
